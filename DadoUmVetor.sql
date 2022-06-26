@@ -2,7 +2,7 @@
 
 SELECT c1 AS dia_do_mês, min(c2) as valor_do_dia
 FROM dados
-WHERE c2 != 0
+WHERE c2 != 0;
 
 -- ----------------
 -- "14"	"373.7838"
@@ -11,7 +11,7 @@ WHERE c2 != 0
 -- O maior valor de faturamento ocorrido em um dia do mês; ##
 
 SELECT c1 AS dia_do_mês, max(c2) as valor_do_dia
-FROM dados
+FROM dados;
 
 -- ----------------
 -- "16"	"48924.2448"
@@ -23,7 +23,7 @@ SELECT c1 as Dia_do_mês,
 c2 as Faturamento_no_dia
 FROM dados
 WHERE c2 != 0 and c2 > 20865.3701
-GROUP by c1
+GROUP by c1;
 
 -- ----------------
 -- "Dia_do_mês" "Faturamento_no_dia"
